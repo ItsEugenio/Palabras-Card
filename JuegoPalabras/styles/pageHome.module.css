@@ -1,0 +1,293 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Titulo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: all ease;
+    color: #FFFF55;
+    text-shadow: 3px 3px #3F3F15;
+    letter-spacing: 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .Titulo {
+        animation: giraTitulo infinite 2s linear;
+    }
+    .p2 {
+        animation: giraTitulo infinite 1s linear;
+    }
+    .corazon {
+        animation: giraTitulo infinite 1s linear;
+    }
+    .Inputs{
+        animation: inputAnimate infinite 3s linear;
+    }
+}
+
+@keyframes giraTitulo {
+    0% {
+        transform: scale(1.0);
+
+    }
+
+    25% {
+        transform: scale(1.1);
+
+    }
+
+    50% {
+        transform: scale(1.2);
+
+    }
+
+    75% {
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+
+}
+@keyframes inputAnimate {
+    0% {
+        transform: scale(1.0);
+
+    }
+
+    25% {
+        transform: scale(1.05);
+
+    }
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    75% {
+        transform: scale(1.05);
+
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50em;
+    margin: 0 auto;
+    background-color: #14213d;
+    border-radius: 15px;
+    padding: 20px;
+    height: 40em;
+}
+
+.InfoCont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.subtitulo{
+    color: azure;
+    text-shadow: 3px 3px #3F3F3F;
+   
+}
+.HUDcont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em ;
+}
+.ContPalabras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    border: 1px solid;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: #e5e5e5;
+}
+.ContPalabras p{
+    margin: 5px;
+    font-weight: bold;
+}
+.ContPalabras .p2{
+    color: #FFFF55;
+    text-shadow: 3px 3px #3F3F15;
+    letter-spacing: 5px;
+    font-size: 25px;
+    margin: 15px;
+}
+
+
+.corazon {
+    height: 30px;
+    margin: 5px;
+}
+
+
+
+.ContainerInputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all ease;
+    backface-visibility: hidden;
+    font-size: 18px;
+    font-family: Minecraftia;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    background-color: #38b000;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.message {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: azure;
+}
+
+.contIndInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InputCont {
+    margin: 5px;
+    border: none;
+}
+
+.Inputs {
+    border-radius: 10px;
+    width: 2.5em;
+    height: 2em;
+    text-align: center;
+    border: 2px solid #FFFF55;
+    background-color: #14213d;
+    color: azure;
+    font-size: 1.5rem;
+    margin: 10px;
+
+
+}
+
+.BtnCont {
+    margin: 5px;
+}
+
+.btnDelete {
+    padding: 0.5rem 1rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all ease;
+    backface-visibility: hidden;
+    font-family: Minecraftia;
+    text-align: center;
+
+}
+
+.btnDelete:hover {
+    transform: scale(1.2);
+    background-color: #d90429;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+
+    .Titulo{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30em;
+        margin: 0 auto;
+       
+        border-radius: 15px;
+        padding: 20px;
+     
+    }
+    
+  }
+
+  @media screen and (max-width: 520px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 17em;
+        margin: 0 auto;
+        
+        border-radius: 15px;
+        padding: 20px;
+        height: 45em;
+    }
+    .HUDcont{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .ContPalabras{
+        margin: 10px;
+        padding: 5px;
+    }
+    .Inputs{
+        width: 1.2em;
+        height: 1.4em;
+        margin: 2px;
+    }
+    .btnDelete{
+        font-size: 13px;
+    }
+    .subtitulo{
+        color: azure;
+        text-shadow: 3px 3px #3F3F3F;
+     
+    }
+  }
